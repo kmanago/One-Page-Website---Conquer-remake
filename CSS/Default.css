@@ -3,7 +3,9 @@ html{
 }
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    color: dimgray;
+    font-size:16px;
 }
 
 .nav {
@@ -40,29 +42,201 @@ body {
   display: block;
   height: 1000px;
   overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
-#home{
-    height:500px;
-    background-color:lightblue;
+break {
+    flex-basis: 100%;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+#home {
+    height: 1000px;
+    background-color: lightblue;
     background-image: url("../Images/bg-1.jpg");
-    background-size:cover;
+    background-size: cover;
     padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
-#about{
-    height:1000px;
-    background-color:lightpink;
+.home-title{
+    height: 500px;
+    width: 500px;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    text-shadow: #000 3px 3px;
+}
+.home-content{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: none;
+}
+#about {
+    height: 1000px;
+    background-color: white;
     padding-top: 70px;
-} 
-#service{
-    height:1000px;
-    background-color:lightgreen;
-    padding-top: 70px;
+    
+}
+.about-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#contact{
-    height:1000px;
-    background-color:lightgoldenrodyellow;
+
+.sm-card {
+    transition: 0.3s;
+    width: 400px;
+
+}
+
+
+.sm-card-container {
+    padding: 2px 16px;
+    padding-bottom:20px;
+    margin-top:-4px;
+    top:0;
+    background-color: #e7e7e7;
+}
+.line-break {
+    width: 100%;
+    height:50px;
+}
+.lg-card {
+    transition: 0.3s;
+    width: 500px;
+    margin-bottom:20px;
+}
+
+.lg-card-container {
+    padding: 2px 16px;
+    padding-bottom: 20px;
+    margin-top: -4px;
+    top: 0;
+    background-color: #e7e7e7;
+    font-size:14px;
+}
+
+.greenbutton {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+.bluebutton {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+.redbutton {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+.readmorebutton {
+    background-color: #f1f1f1;
+    border: #555555 solid 1px;
+    color: #555555;
+    padding: 15px 32px;
+    text-align: center;
+    display:block;
+    float:right;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#service {
+    height: 1000px;
+    background-color: lightgreen;
+    background-image: url("../Images/bg-2.jpg");
+    background-size: cover;
     padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-title{
+    height: 500px;
+    width: 500px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: gray 3px 3px;
+}
+
+.service-content{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: none;
+}
+
+#contact {
+    height: 1000px;
+    background-color: lightgoldenrodyellow;
+    background-image: url("../Images/bg-3.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-title {
+    height: 500px;
+    width: 500px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: gray 3px 3px;
+}
+
+.contact-content {
+    font-size: 20px;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    resize: none;
 }
