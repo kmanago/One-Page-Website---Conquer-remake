@@ -30,12 +30,7 @@ body {
     border: solid 1px #646d7c;
 }
 
-.topnav a:hover {
-    background-color: #49505f;
-    color: white;
-}
-
-.topnav a.active {
+.topnav a:hover,a.active  {
     background-color: #49505f;
     color: white;
 }
@@ -43,12 +38,7 @@ body {
 #home {
     height: 1000px;
     background-color: white;
-    /*background-image: url("../Images/bg-1.jpg");
-    background-size: cover;*/
     padding-top: 70px;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
 .home-wrapper {
@@ -65,8 +55,6 @@ body {
 }
 
 .home-title {
-    /*height: 500px;
-    width: 500px;*/
     font-size: 100px;
     text-align: center;
     color: white;
@@ -81,62 +69,84 @@ body {
 }
 
 #about {
-    height: 1000px;
+    height: 100%;
     background-color: white;
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
-
-
-.cards {
-    width: 100%;
+.cards{
+    display: -webkit-flex;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: stretch;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
 }
-.cards-nowrap {
-    display: flex;
-    flex-wrap: no-wrap;
-    justify-content: space-around;
-}
+
 
 .xsm-card {
     transition: 0.2s;
     flex: 0 0 200px;
     margin:10px;
+    display:flex;
+    flex-direction:column;
+}
 
+.xsm-card-unequal {
+    transition: 0.2s;
+    flex: 0 0 200px;
+    margin: 10px;
 }
 
 .sm-card {
     transition: 0.3s;
     flex: 0 0 300px;
-    margin:10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.md-card{
+.sm-card {
+    transition: 0.3s;
+    flex: 0 0 300px;
+    margin: 10px;
+}
+
+.md-card {
     transition: 0.3s;
     flex: 0 0 400px;
-    margin:10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.lg-card{
+.md-card-unequal {
+    transition: 0.3s;
+    flex: 0 0 400px;
+    margin: 10px;
+}
+
+.lg-card {
     transition: 0.3s;
     flex: 0 0 850px;
-    margin:10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lg-card-unequal{
+    transition: 0.3s;
+    flex: 0 0 850px;
+    margin: 10px;
 }
 
 .card-container {
-    padding: 2px 16px;
-    padding-bottom: 10px;
-    margin-top: -4px;
-    top: 0;
+    padding: 10px;
     background-color: #e7e7e7;
     overflow: hidden;
-    font-size:14px;
+    font-size: 14px;
+    flex: 1;
 }
-
 
 
 .line-break {
@@ -144,16 +154,6 @@ body {
     height: 50px;
 }
 
-
-
-.xl-card-container {
-    padding: 2px 16px;
-    padding-bottom: 20px;
-    background-color: #e7e7e7;
-    font-size: 14px;
-    margin-top: -4px;
-    overflow: hidden;
-}
 
 .greenbutton {
     background-color: green;
@@ -163,7 +163,7 @@ body {
     text-align: center;
     display: block;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -209,20 +209,31 @@ body {
 
 .defaultbutton {
     background-color: #f1f1f1;
-    border: #555555 solid 1px;
-    color: #555555;
+    border: 1px solid gray;
+    color: dimgray;
     padding: 10px 24px;
     text-align: center;
     display: block;
-    border-radius: 4px;
-    font-size: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.submitbutton {
+    background-color:rgb(60, 60, 60);
+    border: white solid 1px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 #service {
     height: 100%;
     background-color: white;
-    padding-top: 70px;
+   
 }
 
 .service-wrapper {
@@ -251,7 +262,6 @@ body {
     text-align: center;
     color: white;
     text-shadow: none;
-
 }
 
 .service-panel {
@@ -270,38 +280,111 @@ body {
 
 
 #contact {
-    height: 1000px;
-    background-color: lightgoldenrodyellow;
-    background-image: url("../Images/bg-3.jpg");
-    background-size: cover;
+    height: 100%;
+    background-color: white;
     padding-top: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.contact-title {
-    height: 500px;
-    width: 500px;
-    font-size: 50px;
+.contact-wrapper {
+    width: 100%;
+    height: 800px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    background-image: url("../Images/bg-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-info {
+    height: 150px;
+    width: 600px;
+    font-size: 16px;
     text-align: center;
+    flex-wrap:wrap;
+    margin:100px;
+}
+.contact-title {
+    text-shadow: black 3px 3px;
+    font-size: 40px;
     color: white;
-    text-shadow: gray 3px 3px;
+    text-align: center;
+   margin-bottom:30px;
 }
 
 .contact-content {
     font-size: 20px;
-    color: white;
-}
-
-textarea {
+    color: black;
     width: 100%;
-    height: 150px;
-    resize: vertical;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px 20px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.5);
-    resize: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    margin-bottom: 10px;
+}
+
+.form-footer{
+    display:flex;
+    flex-direction:row;
+    width:50%;
+    float:right;
+    margin-right:-25px;
+}
+
+.myForm {
+    display: flex;
+    padding: 10px; 
+    flex-direction:row;
+    width:100%;
+}
+
+.contact {
+    flex: 1;
+    order: 1;
+    margin-right: 10px;
+    text-align: left;
+    color: black;
+    width: 50%;
+    display: flex;
+    margin-left: -10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact input {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right:10px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border:none;
+    font-size: 14px;
+}
+
+.message {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 15px;
+    margin-right: -15px;
+}
+
+.message textarea {
+    flex: 1;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: -15px;
+}
+
+#footer{
+    height:100%;
 }
