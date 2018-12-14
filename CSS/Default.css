@@ -30,27 +30,14 @@ body {
     border: solid 1px #646d7c;
 }
 
-    .topnav a:hover {
-        background-color: #49505f;
-        color: white;
-    }
-
-    .topnav a.active {
-        background-color: #49505f;
-        color: white;
-    }
-
-.scrolling-box {
-    display: block;
-    height: 1000px;
-    overflow-y: scroll;
+.topnav a:hover {
+    background-color: #49505f;
+    color: white;
 }
 
-break {
-    flex-basis: 100%;
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
+.topnav a.active {
+    background-color: #49505f;
+    color: white;
 }
 
 #home {
@@ -101,62 +88,55 @@ break {
 
 
 
-.about-content {
+.cards {
     width: 100%;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: stretch;
+    flex-direction:row;
+    justify-content: center;
 }
-
-.card {
-    background-color: #e7e7e7;
-    transition: 0.3s;
-    margin-bottom: 2em;
-    display: flex;
-    flex: 0 1 calc(33% - 0.5em);
-}
-
-.card-container {
-    padding: 1.4em;
-}
-
-    .card-container p {
-        font-size: 95%;
-    }
-
-.sm-card {
-    transition: 0.3s;
-    width:300px;
-   
-}
-
-
-.sm-card-container {
-    padding: 2px 16px;
-    padding-bottom: 20px;
-    margin-top: -4px;
-    top: 0;
-    background-color: #e7e7e7;
-    overflow: hidden;
-}
-
-.sm-card-container-2 {
-    padding: 2px 16px;
-    padding-bottom: 20px;
-    margin-top: -4px;
-    top: 0;
-    background-color: #e7e7e7;
-    overflow: hidden;
-    height:200px;
-}
-
-.holder {
+.cards-nowrap {
     display: flex;
     flex-wrap: no-wrap;
     justify-content: space-around;
 }
+
+.xsm-card {
+    transition: 0.2s;
+    flex: 0 0 200px;
+    margin:10px;
+
+}
+
+.sm-card {
+    transition: 0.3s;
+    flex: 0 0 300px;
+    margin:10px;
+}
+
+.md-card{
+    transition: 0.3s;
+    flex: 0 0 400px;
+    margin:10px;
+}
+
+.lg-card{
+    transition: 0.3s;
+    flex: 0 0 850px;
+    margin:10px;
+}
+
+.card-container {
+    padding: 2px 16px;
+    padding-bottom: 10px;
+    margin-top: -4px;
+    top: 0;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    font-size:14px;
+}
+
 
 
 .line-break {
@@ -164,24 +144,7 @@ break {
     height: 50px;
 }
 
-.lg-card {
-    transition: 0.3s;
-    width: 500px;
-}
 
-.lg-card-container {
-    padding: 2px 16px;
-    padding-bottom: 20px;
-    background-color: #e7e7e7;
-    font-size: 14px;
-    overflow: hidden;
-    margin-top: -4px;
-}
-
-.xl-card {
-    transition: 0.3s;
-   
-}
 
 .xl-card-container {
     padding: 2px 16px;
@@ -196,11 +159,11 @@ break {
     background-color: green;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     display: block;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -209,11 +172,11 @@ break {
     background-color: #008CBA;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     display: block;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -222,11 +185,11 @@ break {
     background-color: darkred;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     display: block;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -235,12 +198,12 @@ break {
     background-color: #f1f1f1;
     border: #555555 solid 1px;
     color: #555555;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     display: block;
     border-radius: 4px;
     float:right;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -248,11 +211,11 @@ break {
     background-color: #f1f1f1;
     border: #555555 solid 1px;
     color: #555555;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     display: block;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
