@@ -36,14 +36,14 @@ body {
 }
 
 #home {
-    height: 1000px;
+    height: 100%;
     background-color: white;
     padding-top: 70px;
 }
 
 .home-wrapper {
     width: 100%;
-    height: 100%;
+    height: 800px;
     overflow-y: hidden;
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@ body {
     flex-direction: column;
 }
 
-.sm-card {
+.sm-card-unequal {
     transition: 0.3s;
     flex: 0 0 300px;
     margin: 10px;
@@ -114,7 +114,7 @@ body {
 
 .md-card {
     transition: 0.3s;
-    flex: 0 0 400px;
+    flex: 0 0 460px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -122,7 +122,7 @@ body {
 
 .md-card-unequal {
     transition: 0.3s;
-    flex: 0 0 400px;
+    flex: 0 0 460px;
     margin: 10px;
 }
 
@@ -148,6 +148,14 @@ body {
     flex: 1;
 }
 
+.card-container-unequal {
+    padding: 10px;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    font-size: 14px;
+    flex: 1;
+    margin-top:-10px;
+}
 
 .line-break {
     width: 100%;
@@ -387,4 +395,45 @@ body {
 
 #footer{
     height:100%;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
